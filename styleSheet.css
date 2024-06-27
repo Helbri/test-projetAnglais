@@ -1,0 +1,39 @@
+/* RECHERCHE */
+
+form.formStyle {
+  display: table;
+  /*valeur de type display-inside. "(Les) mots clefs (de ce type) définissent le type d'affichage intérieur de l'élément qui définit le contexte de formatage qui organisera le contenu de l'élément (si celui-ci n'est pas un élément remplacé)."-mdn display*/
+  /* table -> "L'élément se comporte comme un élément HTML <table>. Il définit une boîte de bloc."-mdn display-inside*/
+}
+
+div.formStyle {
+  display: table-row;
+  /*valeur de type display-internal. Certains modes d'expositions, tels que "table" et "ruby" possèdent une structure interne complexe avec différents rôles possibles pour les éléments descendants. Cette section définit ces rôles internes qui s'appliquent uniquement pour une mode de disposition donné."-mdn display*/
+  /* table-row -> "Ces éléments se comportent comme des éléments HTML <tr> (balise de colonne en tableau)."-mdn display-internal */
+}
+
+label,
+input,
+select {
+  display: table-cell;
+  /*valeur de type display-internal. Certains modes d'expositions, tels que "table" et "ruby" possèdent une structure interne complexe avec différents rôles possibles pour les éléments descendants. Cette section définit ces rôles internes qui s'appliquent uniquement pour une mode de disposition donné."-mdn display*/
+  /* table-cell -> "Ces éléments se comportent comme des éléments HTML <td> (balise de cellule ordinaire en tableau)."-mdn display-internal */
+  margin-bottom: 10px;
+  /* margin : espace de la boîte situé entre la bordure et l'extérieur de la boîte */
+}
+
+label {
+  padding-right: 10px;
+  /* padding : espace de la boîte situé entre la bordure et le contenu de la boîte */
+}
+
+/* MOTS */
+
+article {
+  /* display: inline; */
+  border: black solid 1px;
+  background-color: lightseagreen;
+  margin: 5px 0 5px 10px;
+  padding-left: 5px;
+  width: 230px;
+}
