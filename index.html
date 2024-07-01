@@ -15,7 +15,12 @@
   <body>
     <h1>Recherche de mots</h1>
     <main>
-      <form action="" method="" class="formStyle">
+      <form
+        action=""
+        method="https://127.0.0.1:8000/api/words"
+        class="formStyle"
+        id="form"
+      >
         <!--/!\ action devra contenir l'adresse url de l'api (ici api platforme)-->
         <div class="formStyle">
           <label for="word">Entrez le mot:</label>
@@ -35,10 +40,10 @@
           </select>
         </div>
         <div class="formStyle">
-          <input type="submit" />
+          <button type="submit">Envoyer</button>
         </div>
       </form>
-      <div>
+      <div id="listeMots">
         <article>
           <div>mot: <strong>Ananas</strong></div>
           <div>famille de mot: nom</div>
